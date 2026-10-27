@@ -32,6 +32,7 @@ window.I18N_EN = {
   'greet.body': '<p>Thank you sincerely for visiting INTO TOUR.</p><p>Travel is about leaving the everyday and stepping INTO an unfamiliar world. So that the journey can be filled with nothing but excitement, we prepare even more carefully behind the scenes.</p><p>Honest quotes, quick responses, and responsible support on the ground. We believe keeping these basics is the best way to create a great trip. We hope to be remembered not for a single trip, but as a partner for the long run.</p><p>Thank you.</p>',
   'greet.sign': 'Co-CEO, INTO TOUR',
   'greet.name': 'Jaehyuk Choi',
+  'greet.alias': '(Johan)',
 
   'dest.title': 'Where would you like to go?',
   'dest.desc': 'From nearby Asia to Europe — anywhere in the world. We will help you choose and plan the destination that fits your purpose and schedule.',
