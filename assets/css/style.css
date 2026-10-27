@@ -237,7 +237,9 @@ section[id]{scroll-margin-top:72px}
 .hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
 
 /* CONTACT */
-.contact-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-bottom:56px}
+.contact-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:18px;margin-bottom:56px}
+.contact-grid>.contact-card{grid-column:span 2}
+.contact-grid>.contact-card:nth-child(n+4){grid-column:span 3}
 .contact-card{padding:30px 26px;border:1px solid var(--glass-border);border-radius:14px;background:var(--glass);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);transition:border-color .3s,transform .3s var(--ease-out)}
 .contact-card:hover{border-color:rgba(17,17,17,0.3);transform:translateY(-3px)}
 .contact-icon{width:44px;height:44px;border-radius:12px;background:var(--ink);color:#fff;display:flex;align-items:center;justify-content:center;margin-bottom:16px}
@@ -246,6 +248,7 @@ section[id]{scroll-margin-top:72px}
 .contact-value a:hover{text-decoration:underline}
 .contact-note{font-size:.84rem;color:var(--mid-gray);margin-top:4px}
 .kakao-icon{background:#FEE500;color:#191919}
+.wa-icon{background:#25D366;color:#fff}
 .copy-btn{border:1px solid var(--border);background:rgba(255,255,255,0.8);border-radius:6px;padding:2px 9px;font-size:.78rem;font-weight:600;cursor:pointer;margin-right:4px;transition:all .2s}
 .copy-btn:hover{border-color:var(--ink)}
 .copy-btn.done{background:var(--ink);color:#fff;border-color:var(--ink)}
@@ -297,6 +300,8 @@ section[id]{scroll-margin-top:72px}
   .nav-links a{font-size:.82rem}
   .process{grid-template-columns:repeat(3,1fr)}
   .contact-grid{grid-template-columns:repeat(2,1fr)}
+  .contact-grid>.contact-card,.contact-grid>.contact-card:nth-child(n+4){grid-column:auto}
+  .contact-grid>.contact-card:last-child{grid-column:1/-1}
 }
 @media (max-width:960px){
   .nav-toggle{display:flex}
@@ -339,6 +344,7 @@ section[id]{scroll-margin-top:72px}
   .news-title{white-space:normal}
   .news-date{text-align:left}
   .contact-grid{grid-template-columns:1fr}
+  .contact-grid>.contact-card:last-child{grid-column:auto}
   .modal-box{padding:30px 22px}
   .nav-logo-text small{display:none}
 }

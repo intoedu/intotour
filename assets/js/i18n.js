@@ -31,7 +31,7 @@ window.I18N_EN = {
   'greet.title': 'We take responsibility for<br>your journey, all the way',
   'greet.body': '<p>Thank you sincerely for visiting INTO TOUR.</p><p>Travel is about leaving the everyday and stepping INTO an unfamiliar world. So that the journey can be filled with nothing but excitement, we prepare even more carefully behind the scenes.</p><p>Honest quotes, quick responses, and responsible support on the ground. We believe keeping these basics is the best way to create a great trip. We hope to be remembered not for a single trip, but as a partner for the long run.</p><p>Thank you.</p>',
   'greet.sign': 'CEO, INTO TOUR',
-  'greet.name': 'Han Cho',
+  'greet.name': 'Johan Choi',
 
   'dest.title': 'Where would you like to go?',
   'dest.desc': 'From nearby Asia to Europe — anywhere in the world. We will help you choose and plan the destination that fits your purpose and schedule.',
@@ -91,7 +91,7 @@ window.I18N_EN = {
   'book.desc': 'Leave your request below and our staff will contact you with an itinerary and quote.',
   'book.p1': 'We will contact you within 1–2 business days.',
   'book.p2': 'A request does not confirm a booking; bookings are confirmed after consultation.',
-  'book.p3': 'For urgent trips, please call +82-10-7537-3545 or message us on KakaoTalk (ID: rokaf2002730).',
+  'book.p3': 'For urgent trips, please call +82-10-7537-3545 or message us on WhatsApp (+63 916 685 5785) or KakaoTalk (ID: rokaf2002730).',
 
   'f.name': 'Your name',
   'f.name2': 'Name',
@@ -123,6 +123,7 @@ window.I18N_EN = {
   'contact.phoneNote': 'Phone consultation',
   'contact.mailNote': 'Documents & quotes',
   'contact.kakaoCopy': 'Copy ID',
+  'contact.waNote': 'Easy from abroad · tap to start a chat',
   'contact.kakaoNote': 'KakaoTalk › Add friend › Search by ID',
   'contact.online': 'Online, 24/7',
   'contact.onlineNote': 'Leave a request or message anytime',
@@ -130,7 +131,7 @@ window.I18N_EN = {
   'inq.desc': 'Ask us about tours, quotes or schedules and we will get back to you quickly.',
 
   'ft.name': 'INTO TOUR',
-  'ft.ceo': 'CEO: Han Cho',
+  'ft.ceo': 'CEO: Johan Choi',
   'ft.privacy': 'Privacy Policy',
 
   'pv.title': 'Collection and Use of Personal Information',
