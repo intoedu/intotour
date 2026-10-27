@@ -131,7 +131,7 @@ window.I18N_EN = {
   'inq.desc': 'Ask us about tours, quotes or schedules and we will get back to you quickly.',
 
   'ft.name': 'INTO TOUR',
-  'ft.ceo': 'CEO: Eun Kyoung Lee | Co-CEO: Jaehyuk (Johan) Choi',
+  'ft.ceo': 'Co-CEOs: Jaehyuk (Johan) Choi, Eun Kyoung Lee',
   'ft.privacy': 'Privacy Policy',
 
   'pv.title': 'Collection and Use of Personal Information',
