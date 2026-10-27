@@ -103,7 +103,7 @@ window.I18N_EN = {
   'f.typeSel': 'Please select',
   'f.etc': 'Other',
   'f.dest': 'Destination',
-  'f.destPh': 'e.g. Osaka, Japan',
+  'f.destPh': 'Country or city you have in mind',
   'f.date': 'Preferred departure',
   'f.nights': 'Duration',
   'f.nightsPh': 'e.g. 3 nights 4 days',
@@ -127,7 +127,7 @@ window.I18N_EN = {
   'inq.title': 'Quick Inquiry',
   'inq.desc': 'Ask us about tours, quotes or schedules and we will get back to you quickly.',
 
-  'ft.name': 'INTO TOUR (IM)',
+  'ft.name': 'INTO TOUR',
   'ft.ceo': 'CEO: Han Cho',
   'ft.privacy': 'Privacy Policy',
 
