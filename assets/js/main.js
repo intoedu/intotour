@@ -220,13 +220,21 @@
       ' - ' + (data.name || '') + (data.tripType ? ' / ' + data.tripType : '');
   }
 
+  var FORM_TO = CFG.formTo || CFG.email || '';
+
+  function mailIntro(kind) {
+    return '■ 인투여행사(INTO TOUR) 홈페이지에서 접수된 ' + (kind === 'booking' ? '여행 신청' : '문의') + '입니다.';
+  }
+
+  // 자동 발송이 안 될 때의 예비 경로: 방문자의 메일 앱으로 같은 내용을 보냅니다.
   function sendMail(kind, data) {
     var lines = Object.keys(data).filter(function (k) { return data[k]; }).map(function (k) {
       return (FIELD_LABELS[k] || k) + ': ' + data[k];
     });
-    var body = '■ 인투여행사(INTO TOUR) 홈페이지에서 접수된 ' + (kind === 'booking' ? '여행 신청' : '문의') + '입니다.\n\n' +
-      lines.join('\n') + '\n\n— 보낸 곳: ' + SOURCE + ' (' + location.origin + location.pathname + ')';
-    window.location.href = 'mailto:' + (CFG.email || '') + '?subject=' + encodeURIComponent(mailSubject(kind, data)) + '&body=' + encodeURIComponent(body);
+    var body = mailIntro(kind) + '\n\n' + lines.join('\n') +
+      '\n\n— 보낸 곳: ' + SOURCE + ' (' + location.origin + location.pathname + ')';
+    window.location.href = 'mailto:' + FORM_TO + '?' + (CFG.formCc ? 'cc=' + encodeURIComponent(CFG.formCc) + '&' : '') +
+      'subject=' + encodeURIComponent(mailSubject(kind, data)) + '&body=' + encodeURIComponent(body);
   }
 
   $$('form[data-form]').forEach(function (form) {
@@ -253,23 +261,32 @@
       btn.disabled = true;
       btn.textContent = t('msg.sending');
 
+      // FormSubmit(formsubmit.co) 형식: _로 시작하는 항목은 메일 설정, 나머지는 표로 정리되어 도착합니다.
       var payload = new FormData();
       payload.append('_subject', mailSubject(kind, data));
+      payload.append('_template', 'table');
+      payload.append('_captcha', 'false');
+      if (CFG.formCc) payload.append('_cc', CFG.formCc);
+      if (data.email) payload.append('_replyto', data.email);
       payload.append('접수처', SOURCE);
-      payload.append('formType', kind === 'booking' ? '여행 신청' : '문의');
-      Object.keys(data).forEach(function (k) { payload.append(k, data[k]); });
+      payload.append('안내', mailIntro(kind));
+      Object.keys(data).forEach(function (k) { if (data[k]) payload.append(FIELD_LABELS[k] || k, data[k]); });
 
-      // Google Apps Script 웹앱은 CORS 응답을 주지 않으므로 no-cors로 보냅니다.
-      var isGas = /script\.google\.com/.test(CFG.formEndpoint);
-      fetch(CFG.formEndpoint, {
-        method: 'POST',
-        body: payload,
-        mode: isGas ? 'no-cors' : 'cors',
-        headers: isGas ? undefined : { Accept: 'application/json' }
-      })
-        .then(function (r) { if (!isGas && !r.ok) throw new Error(r.status); })
-        .then(function () { form.reset(); showMsg(form, 'ok', t('msg.ok')); })
-        .catch(function () { showMsg(form, 'err', t('msg.fail')); })
+      fetch(CFG.formEndpoint, { method: 'POST', body: payload, headers: { Accept: 'application/json' } })
+        .then(function (r) {
+          if (!r.ok) throw new Error(r.status);
+          return r.json();
+        })
+        .then(function (res) {
+          if (res && (res.success === false || res.success === 'false')) throw new Error(res.message || 'not sent');
+          form.reset();
+          showMsg(form, 'ok', t('msg.ok'));
+        })
+        .catch(function () {
+          // 전송 실패 시 접수가 사라지지 않도록 메일 앱으로 이어서 보냅니다.
+          sendMail(kind, data);
+          showMsg(form, 'err', t('msg.failMailto'));
+        })
         .then(function () { btn.disabled = false; btn.innerHTML = label; });
     });
   });
