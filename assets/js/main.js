@@ -213,12 +213,20 @@
     return data;
   }
 
+  // 받는 메일함에서 인투여행사 접수 건을 구분할 수 있도록 제목·본문에 출처를 표시합니다.
+  var SOURCE = CFG.formSource || '인투여행사 홈페이지';
+  function mailSubject(kind, data) {
+    return '[' + SOURCE + '] ' + (kind === 'booking' ? '여행 신청' : '문의') +
+      ' - ' + (data.name || '') + (data.tripType ? ' / ' + data.tripType : '');
+  }
+
   function sendMail(kind, data) {
-    var subject = (kind === 'booking' ? '[여행 신청] ' : '[문의] ') + (data.name || '') + (data.tripType ? ' / ' + data.tripType : '');
-    var body = Object.keys(data).filter(function (k) { return data[k]; }).map(function (k) {
+    var lines = Object.keys(data).filter(function (k) { return data[k]; }).map(function (k) {
       return (FIELD_LABELS[k] || k) + ': ' + data[k];
-    }).join('\n');
-    window.location.href = 'mailto:' + (CFG.email || '') + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+    });
+    var body = '■ 인투여행사(INTO TOUR) 홈페이지에서 접수된 ' + (kind === 'booking' ? '여행 신청' : '문의') + '입니다.\n\n' +
+      lines.join('\n') + '\n\n— 보낸 곳: ' + SOURCE + ' (' + location.origin + location.pathname + ')';
+    window.location.href = 'mailto:' + (CFG.email || '') + '?subject=' + encodeURIComponent(mailSubject(kind, data)) + '&body=' + encodeURIComponent(body);
   }
 
   $$('form[data-form]').forEach(function (form) {
@@ -246,7 +254,8 @@
       btn.textContent = t('msg.sending');
 
       var payload = new FormData();
-      payload.append('_subject', kind === 'booking' ? '[INTO TOUR] 여행 신청' : '[INTO TOUR] 문의');
+      payload.append('_subject', mailSubject(kind, data));
+      payload.append('접수처', SOURCE);
       payload.append('formType', kind === 'booking' ? '여행 신청' : '문의');
       Object.keys(data).forEach(function (k) { payload.append(k, data[k]); });
 
