@@ -30,8 +30,8 @@ window.I18N_EN = {
   'greet.badge': 'CEO Message',
   'greet.title': 'We take responsibility for<br>your journey, all the way',
   'greet.body': '<p>Thank you sincerely for visiting INTO TOUR.</p><p>Travel is about leaving the everyday and stepping INTO an unfamiliar world. So that the journey can be filled with nothing but excitement, we prepare even more carefully behind the scenes.</p><p>Honest quotes, quick responses, and responsible support on the ground. We believe keeping these basics is the best way to create a great trip. We hope to be remembered not for a single trip, but as a partner for the long run.</p><p>Thank you.</p>',
-  'greet.sign': 'CEO, INTO TOUR',
-  'greet.name': 'Johan Choi',
+  'greet.sign': 'Co-CEO, INTO TOUR',
+  'greet.name': 'Jaehyuk Choi',
 
   'dest.title': 'Where would you like to go?',
   'dest.desc': 'From nearby Asia to Europe — anywhere in the world. We will help you choose and plan the destination that fits your purpose and schedule.',
@@ -59,6 +59,7 @@ window.I18N_EN = {
   'why.c2': 'How we operate',
   'why.c2a': 'Itinerary, packing list and travel notes shared before departure',
   'why.c2b': 'Quick alternatives and real-time updates when things change on site',
+  'why.partner': 'In partnership with <strong>Centum Sky Co., Ltd., an authorized agency of Yellow Balloon Tour</strong>. Backed by a proven travel network, we run flights, hotels and local itineraries reliably.',
   'why.c2c': 'Continuous improvement based on your feedback',
 
   'proc.title': 'From consultation to return, here\'s how it works',
@@ -131,6 +132,7 @@ window.I18N_EN = {
   'inq.desc': 'Ask us about tours, quotes or schedules and we will get back to you quickly.',
 
   'ft.name': 'INTO TOUR',
+  'ft.ceo': 'Co-CEOs: Eun Kyoung Lee · Jaehyuk (Johan) Choi',
   'ft.privacy': 'Privacy Policy',
 
   'pv.title': 'Collection and Use of Personal Information',
