@@ -34,7 +34,7 @@ window.I18N_EN = {
   'greet.name': 'Han Cho',
 
   'dest.title': 'Where would you like to go?',
-  'dest.desc': 'From nearby Asia to Europe, we will help you choose and plan the destination that fits your purpose and schedule.',
+  'dest.desc': 'From nearby Asia to Europe — anywhere in the world. We will help you choose and plan the destination that fits your purpose and schedule.',
   'dest.d1': 'Japan',
   'dest.d2': 'Beach & Resort',
   'dest.d3': 'Türkiye',
@@ -103,7 +103,7 @@ window.I18N_EN = {
   'f.typeSel': 'Please select',
   'f.etc': 'Other',
   'f.dest': 'Destination',
-  'f.destPh': 'Country or city you have in mind',
+  'f.destPh': 'e.g. Osaka, Japan (anywhere in the world)',
   'f.date': 'Preferred departure',
   'f.nights': 'Duration',
   'f.nightsPh': 'e.g. 3 nights 4 days',
