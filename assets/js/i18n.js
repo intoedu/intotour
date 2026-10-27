@@ -136,7 +136,7 @@ window.I18N_EN = {
   'ft.privacy': 'Privacy Policy',
 
   'pv.title': 'Collection and Use of Personal Information',
-  'pv.body': '<p>INTO TOUR (the "Company") collects and uses personal information as follows to handle consultations and trip requests.</p><h4>1. Items collected</h4><ul><li>Required: name, phone number</li><li>Optional: email, organization, trip-related details</li></ul><h4>2. Purpose</h4><ul><li>Contacting you for consultation, itinerary and quote, and booking</li></ul><h4>3. Retention period</h4><ul><li>Destroyed without delay within one year after the consultation or booking is completed (retained longer only where required by law)</li></ul><h4>4. Right to refuse</h4><p>You may refuse consent; in that case online requests may be unavailable. Phone consultation is available without consent.</p><h4>5. Contact</h4><p>imtv2414@gmail.com / +82-10-7537-3545</p>',
+  'pv.body': '<p>INTO TOUR (the "Company") collects and uses personal information as follows to handle consultations and trip requests.</p><h4>1. Items collected</h4><ul><li>Required: name, phone number</li><li>Optional: email, organization, trip-related details</li></ul><h4>2. Purpose</h4><ul><li>Contacting you for consultation, itinerary and quote, and booking</li></ul><h4>3. Retention period</h4><ul><li>Destroyed without delay within one year after the consultation or booking is completed (retained longer only where required by law)</li></ul><h4>4. Right to refuse</h4><p>You may refuse consent; in that case online requests may be unavailable. Phone consultation is available without consent.</p><h4>5. Contact</h4><p>ybtourpus@daum.net / +82-10-7537-3545</p>',
 
   // 스크립트 메시지
   'msg.required': 'Please fill in all required fields (*).',

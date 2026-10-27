@@ -26,7 +26,7 @@
 
 ## 신청·문의 양식 연결
 
-`config.js`의 `formEndpoint`가 비어 있으면, 제출 시 방문자의 메일 앱이 열려 `imtv2414@gmail.com`으로 보내는 방식으로 동작합니다
+`config.js`의 `formEndpoint`가 비어 있으면, 제출 시 방문자의 메일 앱이 열려 `ybtourpus@daum.net`으로 보내는 방식으로 동작합니다
 (메일 앱이 없는 PC에서는 전송이 안 될 수 있음).
 
 온라인 접수를 완전히 자동화하려면 아래 중 하나를 연결해 `formEndpoint`에 주소를 넣으세요.

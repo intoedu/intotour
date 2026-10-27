@@ -7,7 +7,8 @@ window.SITE_CONFIG = {
   // 비워두면 방문자의 메일 앱이 열려 아래 email 주소로 보내지는 방식으로 동작합니다.
   formEndpoint: '',
 
-  email: 'imtv2414@gmail.com',
+  email: 'ybtourpus@daum.net',   // 신청·문의가 도착하는 메일 (노랑풍선 센텀스카이)
+  formSource: '인투여행사 홈페이지', // 메일 제목·본문에 붙는 접수처 표시
   phone: '010-7537-3545',
 
   // 푸터 사업자 정보 (확보되면 입력)
