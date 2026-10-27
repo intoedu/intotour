@@ -1,7 +1,7 @@
 # INTO TOUR (인투여행사) 홈페이지
 
 정적 웹사이트(HTML/CSS/JS)로, GitHub Pages에 그대로 배포됩니다.
-참고 사이트: [SLT TOUR](https://intoedu.github.io/SLT-Tour-Home-Page/) 구성(섹션형 원페이지) + 아이보리 바탕 · 블루 · 옐로 컬러
+참고 사이트: [SLT TOUR](https://intoedu.github.io/SLT-Tour-Home-Page/) 구성(섹션형 원페이지) + 연보라·아이보리·연노랑 그라데이션 배경, 검정 글씨
 
 ## 구성
 
@@ -21,7 +21,7 @@
 
 - **연락처·사업자정보·SNS·양식 전송 주소**: `assets/js/config.js`
 - **공지 추가**: `data/notices.json` 맨 위에 항목 추가 (`category`: `notice` 공지 / `news` 소식, `pinned`: 상단 고정)
-- **색상**: `assets/css/style.css` 상단 변수 (아이보리 `--ivory`, 블루 `--blue`, 옐로 `--yellow`)
+- **색상**: `assets/css/style.css` 상단 변수 (배경 `--lavender`·`--bg`·`--cream`, 글씨 `--ink`, 포인트 `--yellow`)
 - **사진**: 현재 Unsplash 무료 이미지를 사용 중입니다. 실제 여행 사진이 생기면 `assets/img/`에 넣고 `src`를 교체하세요.
 
 ## 신청·문의 양식 연결
@@ -43,7 +43,7 @@
 - [ ] 사업자등록번호, 관광사업(여행업) 등록번호, 사업장 주소 → `config.js`
 - [ ] 상담 운영 시간
 - [ ] SNS(카카오톡 채널·인스타그램·블로그 등) 주소
-- [ ] 로고: 별도 로고 없음 → 임시 심벌(블루 바탕 + 노란 해 + 비행 경로) + `INTO TOUR` 워드마크 사용 중
+- [ ] 로고: 별도 로고 없음 → 임시 심벌(검정 바탕 + 노란 해 + 비행 경로) + `INTO TOUR` 워드마크 사용 중
 - [ ] 도메인 구매 후 GitHub Pages 커스텀 도메인 연결 (`CNAME`)
 
 ## 로컬 미리보기
