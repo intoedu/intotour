@@ -34,7 +34,7 @@ window.I18N_EN = {
   'greet.name': 'Han Cho',
 
   'dest.title': 'Where would you like to go?',
-  'dest.desc': 'From nearby Asia to Europe, we will help you choose and plan the destination that fits your purpose and schedule.',
+  'dest.desc': 'From nearby Asia to Europe — anywhere in the world. We will help you choose and plan the destination that fits your purpose and schedule.',
   'dest.d1': 'Japan',
   'dest.d2': 'Beach & Resort',
   'dest.d3': 'Türkiye',
@@ -91,7 +91,7 @@ window.I18N_EN = {
   'book.desc': 'Leave your request below and our staff will contact you with an itinerary and quote.',
   'book.p1': 'We will contact you within 1–2 business days.',
   'book.p2': 'A request does not confirm a booking; bookings are confirmed after consultation.',
-  'book.p3': 'For urgent trips, please call +82-10-7537-3545 or message us on KakaoTalk (ID: rokaf200270).',
+  'book.p3': 'For urgent trips, please call +82-10-7537-3545 or message us on KakaoTalk (ID: rokaf2002730).',
 
   'f.name': 'Your name',
   'f.name2': 'Name',
@@ -103,7 +103,7 @@ window.I18N_EN = {
   'f.typeSel': 'Please select',
   'f.etc': 'Other',
   'f.dest': 'Destination',
-  'f.destPh': 'Country or city you have in mind',
+  'f.destPh': 'e.g. Osaka, Japan (anywhere in the world)',
   'f.date': 'Preferred departure',
   'f.nights': 'Duration',
   'f.nightsPh': 'e.g. 3 nights 4 days',
