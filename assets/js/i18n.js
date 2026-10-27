@@ -59,7 +59,6 @@ window.I18N_EN = {
   'why.c2': 'How we operate',
   'why.c2a': 'Itinerary, packing list and travel notes shared before departure',
   'why.c2b': 'Quick alternatives and real-time updates when things change on site',
-  'why.partner': 'In partnership with <strong>Centum Sky Co., Ltd., an authorized agency of Yellow Balloon Tour</strong>. Backed by a proven travel network, we run flights, hotels and local itineraries reliably.',
   'why.c2c': 'Continuous improvement based on your feedback',
 
   'proc.title': 'From consultation to return, here\'s how it works',
@@ -132,17 +131,18 @@ window.I18N_EN = {
   'inq.desc': 'Ask us about tours, quotes or schedules and we will get back to you quickly.',
 
   'ft.name': 'INTO TOUR',
-  'ft.ceo': 'Co-CEOs: Eun Kyoung Lee · Jaehyuk (Johan) Choi',
+  'ft.ceo': 'CEO: Eun Kyoung Lee | Co-CEO: Jaehyuk (Johan) Choi',
   'ft.privacy': 'Privacy Policy',
 
   'pv.title': 'Collection and Use of Personal Information',
-  'pv.body': '<p>INTO TOUR (the "Company") collects and uses personal information as follows to handle consultations and trip requests.</p><h4>1. Items collected</h4><ul><li>Required: name, phone number</li><li>Optional: email, organization, trip-related details</li></ul><h4>2. Purpose</h4><ul><li>Contacting you for consultation, itinerary and quote, and booking</li></ul><h4>3. Retention period</h4><ul><li>Destroyed without delay within one year after the consultation or booking is completed (retained longer only where required by law)</li></ul><h4>4. Right to refuse</h4><p>You may refuse consent; in that case online requests may be unavailable. Phone consultation is available without consent.</p><h4>5. Contact</h4><p>ybtourpus@daum.net / +82-10-7537-3545</p>',
+  'pv.body': '<p>INTO TOUR (the "Company") collects and uses personal information as follows to handle consultations and trip requests.</p><h4>1. Items collected</h4><ul><li>Required: name, phone number</li><li>Optional: email, organization, trip-related details</li></ul><h4>2. Purpose</h4><ul><li>Contacting you for consultation, itinerary and quote, and booking</li></ul><h4>3. Retention period</h4><ul><li>Destroyed without delay within one year after the consultation or booking is completed (retained longer only where required by law)</li></ul><h4>4. Right to refuse</h4><p>You may refuse consent; in that case online requests may be unavailable. Phone consultation is available without consent.</p><h4>5. Outsourcing</h4><ul><li>FormSubmit (formsubmit.co): delivers online requests to our staff by email</li></ul><h4>6. Contact</h4><p>imtv2414@gmail.com / +82-10-7537-3545</p>',
 
   // 스크립트 메시지
   'msg.required': 'Please fill in all required fields (*).',
   'msg.agree': 'Please agree to the collection of personal information.',
   'msg.sending': 'Sending…',
   'msg.ok': 'Thank you! Your message has been sent. We will contact you shortly.',
+  'msg.failMailto': 'Automatic sending failed, so your email app has opened. Please press "Send" to complete your request.',
   'msg.fail': 'Sending failed. Please try again or contact us by phone/email.',
   'msg.mailto': 'Your email app has opened. Please press "Send" in the email to complete your request.',
   'cat.notice': 'Notice',
@@ -156,6 +156,7 @@ window.I18N_KO_MSG = {
   'msg.sending': '전송 중…',
   'msg.ok': '감사합니다! 정상적으로 접수되었습니다. 곧 연락드리겠습니다.',
   'msg.fail': '전송에 실패했습니다. 잠시 후 다시 시도하시거나 전화·이메일로 문의해 주세요.',
+  'msg.failMailto': '자동 전송에 실패해 메일 앱을 열었습니다. 메일의 [보내기]를 누르시면 접수가 완료됩니다.',
   'msg.mailto': '메일 앱이 열렸습니다. 메일의 [보내기]를 누르시면 접수가 완료됩니다.',
   'news.empty': '등록된 글이 없습니다.',
   'news.error': '글을 불러오지 못했습니다. 잠시 후 다시 시도해 주세요.',
