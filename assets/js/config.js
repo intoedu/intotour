@@ -5,9 +5,9 @@
 window.SITE_CONFIG = {
   // 신청·문의 자동 발송 (FormSubmit). 비워두면 방문자의 메일 앱이 열리는 방식으로 동작합니다.
   // 첫 접수 때 formTo 메일함으로 'Activate Form' 인증 메일이 오며, 버튼을 눌러야 발송이 시작됩니다.
-  formEndpoint: 'https://formsubmit.co/ajax/ybtourpus@daum.net',
-  formTo: 'ybtourpus@daum.net',        // 신청서가 도착하는 메일
-  formCc: 'imtv2414@gmail.com',        // 같은 신청서를 함께 받는 메일 (최재혁)
+  formEndpoint: 'https://formsubmit.co/ajax/imtv2414@gmail.com',
+  formTo: 'imtv2414@gmail.com',        // 신청서가 도착하는 메일 (최재혁)
+  formCc: '',                          // 함께 받을 메일이 있으면 입력
   formSource: '인투여행사 홈페이지',     // 메일 제목·본문에 붙는 접수처 표시
 
   email: 'imtv2414@gmail.com',         // 사이트에 표시되는 연락 메일 (최재혁)
