@@ -48,8 +48,8 @@ window.I18N_EN = {
   'svc.s2d': 'One-on-one itineraries for individuals, families and small groups. We listen to your travel style and design the route and budget together.',
   'svc.s3t': 'Theme Tours',
   'svc.s3d': 'Golf, food, resort getaways, culture and history — tours focused on what you love.',
-  'svc.s4t': 'Flights, Hotels & Local Arrangements',
-  'svc.s4d': 'Flight ticketing, hotel booking, vehicles and guides — leave us only the parts you need.',
+  'svc.s4t': 'Flights, Hotels & Local Guide Service',
+  'svc.s4d': 'Flight ticketing, hotel booking, vehicles and guide services — leave us only the parts you need.',
 
   'why.title': 'INTO doesn\'t just sell trips —<br>we take responsibility for the journey',
   'why.c1': 'What you get',
