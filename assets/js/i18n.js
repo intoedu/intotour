@@ -91,7 +91,7 @@ window.I18N_EN = {
   'book.desc': 'Leave your request below and our staff will contact you with an itinerary and quote.',
   'book.p1': 'We will contact you within 1–2 business days.',
   'book.p2': 'A request does not confirm a booking; bookings are confirmed after consultation.',
-  'book.p3': 'For urgent trips, please call +82-10-7537-3545 or message us on KakaoTalk (ID: rokaf200270).',
+  'book.p3': 'For urgent trips, please call +82-10-7537-3545 or message us on KakaoTalk (ID: rokaf2002730).',
 
   'f.name': 'Your name',
   'f.name2': 'Name',
