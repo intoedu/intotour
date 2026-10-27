@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#FAF6EC">
 <title>INTO TOUR | 인투여행사</title>
 <meta name="description" content="단체·기업 연수, 맞춤 자유여행, 테마 여행까지 — 상담부터 귀국까지 책임지는 인투여행사(INTO TOUR)">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
@@ -23,8 +24,8 @@
 <nav class="nav" id="nav">
   <div class="nav-inner">
     <a href="#home" class="nav-logo" aria-label="INTO TOUR 홈">
-      <span class="nav-logo-mark">IM</span>
-      <span class="nav-logo-text"><strong>INTO TOUR</strong><small data-i18n="brand.sub">인투여행사</small></span>
+      <svg class="nav-logo-mark" viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="11" fill="#1F4E9C"/><circle cx="29" cy="11" r="5" fill="#F2C230"/><path d="M8 28c6-7 14-10 24-10" stroke="#FAF6EC" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-dasharray="1 4.2"/><path d="M27.5 15.5l5 2.6-4.6 3" fill="#FAF6EC"/></svg>
+      <span class="nav-logo-text"><strong>INTO <em>TOUR</em></strong><small data-i18n="brand.sub">인투여행사</small></span>
     </a>
     <div class="nav-links" id="navLinks">
       <a href="#home" data-i18n="nav.home">홈</a>
@@ -47,26 +48,31 @@
 
 <!-- ===== HERO ===== -->
 <section class="hero" id="home">
-  <div class="hero-bg"></div>
-  <div class="hero-content">
-    <div class="hero-eyebrow">Travel Partner · INTO TOUR</div>
-    <h1 class="hero-title" data-i18n="hero.title">세상 속으로 떠나는 여정,<br><span class="highlight">처음부터 끝까지</span><br>인투가 함께합니다</h1>
-    <p class="hero-sub" data-i18n="hero.sub">상담부터 일정 기획, 항공·숙소 수배, 현지 진행과 귀국 후 관리까지. 단체·기업 연수부터 개인 맞춤 여행까지 여정 전체를 책임지는 여행 파트너, 인투여행사입니다.</p>
-    <div class="hero-tags">
-      <span class="hero-tag"><i class="hero-dot"></i><span data-i18n="hero.tag1">단체·기업 연수</span></span>
-      <span class="hero-tag"><i class="hero-dot"></i><span data-i18n="hero.tag2">맞춤 자유여행</span></span>
-      <span class="hero-tag"><i class="hero-dot"></i><span data-i18n="hero.tag3">테마 여행</span></span>
-      <span class="hero-tag"><i class="hero-dot"></i><span data-i18n="hero.tag4">항공·숙소 예약</span></span>
+  <div class="hero-inner">
+    <div class="hero-content">
+      <div class="hero-eyebrow">Travel Partner · INTO TOUR</div>
+      <h1 class="hero-title" data-i18n="hero.title">세상 속으로 떠나는 여정,<br><span class="highlight">처음부터 끝까지</span><br>인투가 함께합니다</h1>
+      <p class="hero-sub" data-i18n="hero.sub">상담부터 일정 기획, 항공·숙소 수배, 현지 진행과 귀국 후 관리까지. 단체·기업 연수부터 개인 맞춤 여행까지 여정 전체를 책임지는 여행 파트너, 인투여행사입니다.</p>
+      <div class="hero-tags">
+        <span class="hero-tag"><i class="hero-dot"></i><span data-i18n="hero.tag1">단체·기업 연수</span></span>
+        <span class="hero-tag"><i class="hero-dot"></i><span data-i18n="hero.tag2">맞춤 자유여행</span></span>
+        <span class="hero-tag"><i class="hero-dot"></i><span data-i18n="hero.tag3">테마 여행</span></span>
+        <span class="hero-tag"><i class="hero-dot"></i><span data-i18n="hero.tag4">항공·숙소 예약</span></span>
+      </div>
+      <div class="hero-btns">
+        <a href="#booking" class="btn-primary" data-i18n="hero.btn1">여행 신청·예약 →</a>
+        <a href="#about" class="btn-outline" data-i18n="hero.btn2">인투 소개 보기</a>
+      </div>
     </div>
-    <div class="hero-btns">
-      <a href="#booking" class="btn-primary" data-i18n="hero.btn1">여행 신청·예약 →</a>
-      <a href="#about" class="btn-outline" data-i18n="hero.btn2">인투 소개 보기</a>
+    <div class="hero-visual" aria-hidden="true">
+      <span class="hero-sun"></span>
+      <div class="hero-photo"><img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=1100&q=80" alt=""></div>
+      <div class="hero-photo-sm"><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&q=80" alt=""></div>
+      <div class="hero-branding">
+        <span class="hero-brand-line"><b>INTO</b> <span>the World</span></span>
+        <span class="hero-brand-line"><span>with</span> <b>Trust</b></span>
+      </div>
     </div>
-  </div>
-  <div class="hero-branding" aria-hidden="true">
-    <span class="hero-brand-line"><b>INTO</b> <span>the World</span></span>
-    <span class="hero-brand-line"><span>with</span> <b>Trust</b></span>
-    <span class="hero-brand-sub">Plan · Care · Journey</span>
   </div>
   <a href="#about" class="hero-scroll" aria-label="아래로 스크롤">
     <svg width="22" height="34" viewBox="0 0 22 34" fill="none"><rect x="1" y="1" width="20" height="32" rx="10" stroke="currentColor" stroke-width="1.5"/><circle cx="11" cy="10" r="2.5" fill="currentColor"/></svg>
@@ -204,7 +210,7 @@
     <h2 data-i18n="cta.title">다음 여행, 인투와 함께 계획해 보세요</h2>
     <p data-i18n="cta.desc">일정이 정해지지 않았어도 괜찮습니다. 상담은 무료입니다.</p>
     <div class="cta-btns">
-      <a href="#booking" class="btn-white" data-i18n="cta.btn1">온라인 신청하기</a>
+      <a href="#booking" class="btn-blue" data-i18n="cta.btn1">온라인 신청하기</a>
       <a href="tel:01075373545" class="btn-outline" data-i18n="cta.btn2">☎ 010-7537-3545</a>
     </div>
   </div>
@@ -327,7 +333,7 @@
   <div class="container">
     <div class="footer-top">
       <div class="footer-info">
-        <div class="footer-brand"><strong>INTO TOUR</strong></div>
+        <div class="footer-brand"><strong>INTO <em>TOUR</em></strong></div>
         <p><span data-i18n="ft.name">인투여행사 (IM)</span> | <span data-i18n="ft.ceo">대표: 조한</span></p>
         <p data-cfg="bizNo" hidden></p>
         <p data-cfg="tourNo" hidden></p>
