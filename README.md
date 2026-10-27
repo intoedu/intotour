@@ -26,9 +26,9 @@
 
 ## 신청·문의 양식 (자동 발송: FormSubmit)
 
-- 신청·문의는 [FormSubmit](https://formsubmit.co)으로 `ybtourpus@daum.net`에 자동 발송되고, `imtv2414@gmail.com`(최재혁)이 참조로 함께 받습니다. 설정은 `config.js`의 `formEndpoint`·`formTo`·`formCc`입니다.
-- 메일 제목은 `[인투여행사 홈페이지] 여행 신청 - 이름 / 여행유형` 형식이라 노랑풍선 메일함에서 구분됩니다.
-- **최초 1회 인증 필요**: 첫 접수 때 `ybtourpus@daum.net`으로 FormSubmit의 "Activate Form" 메일이 옵니다. 버튼을 눌러야 이후 접수가 전달됩니다.
+- 신청·문의는 [FormSubmit](https://formsubmit.co)으로 `imtv2414@gmail.com`(최재혁)에 자동 발송됩니다. 설정은 `config.js`의 `formEndpoint`·`formTo`·`formCc`입니다.
+- 메일 제목은 `[인투여행사 홈페이지] 여행 신청 - 이름 / 여행유형` 형식이라 메일함에서 바로 구분됩니다.
+- **최초 1회 인증 필요**: 첫 접수 때 `imtv2414@gmail.com`으로 FormSubmit의 "Activate Form" 메일이 옵니다. 버튼을 눌러야 이후 접수가 전달됩니다.
 - 인증 후 FormSubmit이 알려주는 랜덤 주소(`https://formsubmit.co/ajax/xxxxxxxx`)로 `formEndpoint`를 바꾸면 메일 주소가 코드에 노출되지 않아 스팸을 줄일 수 있습니다.
 - 자동 발송이 실패하면 방문자의 메일 앱이 열려 같은 내용을 보내도록 되어 있어 접수가 사라지지 않습니다.
 
