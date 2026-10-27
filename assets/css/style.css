@@ -237,7 +237,7 @@ section[id]{scroll-margin-top:72px}
 .hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
 
 /* CONTACT */
-.contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-bottom:56px}
+.contact-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-bottom:56px}
 .contact-card{padding:30px 26px;border:1px solid var(--glass-border);border-radius:14px;background:var(--glass);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);transition:border-color .3s,transform .3s var(--ease-out)}
 .contact-card:hover{border-color:rgba(17,17,17,0.3);transform:translateY(-3px)}
 .contact-icon{width:44px;height:44px;border-radius:12px;background:var(--ink);color:#fff;display:flex;align-items:center;justify-content:center;margin-bottom:16px}
@@ -245,6 +245,10 @@ section[id]{scroll-margin-top:72px}
 .contact-value{font-size:1.05rem;font-weight:700;word-break:break-all;color:var(--ink)}
 .contact-value a:hover{text-decoration:underline}
 .contact-note{font-size:.84rem;color:var(--mid-gray);margin-top:4px}
+.kakao-icon{background:#FEE500;color:#191919}
+.copy-btn{border:1px solid var(--border);background:rgba(255,255,255,0.8);border-radius:6px;padding:2px 9px;font-size:.78rem;font-weight:600;cursor:pointer;margin-right:4px;transition:all .2s}
+.copy-btn:hover{border-color:var(--ink)}
+.copy-btn.done{background:var(--ink);color:#fff;border-color:var(--ink)}
 .sns-row{display:flex;gap:10px;margin-top:26px;flex-wrap:wrap}
 .sns-row a{display:inline-flex;align-items:center;gap:8px;padding:10px 16px;border:1px solid var(--border);border-radius:10px;font-size:.85rem;font-weight:500;transition:all .2s;background:var(--glass)}
 .sns-row a:hover{border-color:var(--ink)}
@@ -292,6 +296,7 @@ section[id]{scroll-margin-top:72px}
   .nav-links{gap:20px}
   .nav-links a{font-size:.82rem}
   .process{grid-template-columns:repeat(3,1fr)}
+  .contact-grid{grid-template-columns:repeat(2,1fr)}
 }
 @media (max-width:960px){
   .nav-toggle{display:flex}
@@ -305,7 +310,6 @@ section[id]{scroll-margin-top:72px}
   .dest-grid{grid-template-columns:repeat(2,1fr)}
   .greeting,.form-wrap{grid-template-columns:1fr;gap:40px}
   .greeting-visual{aspect-ratio:16/10}
-  .contact-grid{grid-template-columns:1fr}
 }
 @media (max-width:720px){
   .container,.nav-inner,.hero-inner,.photo-strip{padding-left:16px;padding-right:16px}
@@ -334,6 +338,7 @@ section[id]{scroll-margin-top:72px}
   .news-item{grid-template-columns:1fr;gap:6px;padding:18px 4px}
   .news-title{white-space:normal}
   .news-date{text-align:left}
+  .contact-grid{grid-template-columns:1fr}
   .modal-box{padding:30px 22px}
   .nav-logo-text small{display:none}
 }

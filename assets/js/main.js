@@ -279,6 +279,26 @@
     return '<a href="' + escapeHtml(sns[k]) + '" target="_blank" rel="noopener">' + SNS[k] + ' ↗</a>';
   }).join('');
 
+  // 카카오톡 ID 복사
+  $$('[data-copy]').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var text = btn.dataset.copy;
+      var done = function () {
+        btn.textContent = t('msg.copied');
+        btn.classList.add('done');
+        setTimeout(function () {
+          btn.innerHTML = lang === 'en' && EN[btn.dataset.i18n] ? EN[btn.dataset.i18n] : btn.dataset.ko;
+          btn.classList.remove('done');
+        }, 1600);
+      };
+      if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(text).then(done, function () { window.prompt('ID', text); });
+      } else {
+        window.prompt('ID', text);
+      }
+    });
+  });
+
   $('#year').textContent = new Date().getFullYear();
 
   /* ---------- 시작 ---------- */
