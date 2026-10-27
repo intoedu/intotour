@@ -91,7 +91,7 @@ window.I18N_EN = {
   'book.desc': 'Leave your request below and our staff will contact you with an itinerary and quote.',
   'book.p1': 'We will contact you within 1–2 business days.',
   'book.p2': 'A request does not confirm a booking; bookings are confirmed after consultation.',
-  'book.p3': 'For urgent trips, please call +82-10-7537-3545.',
+  'book.p3': 'For urgent trips, please call +82-10-7537-3545 or message us on KakaoTalk (ID: rokaf200270).',
 
   'f.name': 'Your name',
   'f.name2': 'Name',
@@ -122,6 +122,8 @@ window.I18N_EN = {
   'contact.desc': 'If you have any questions, feel free to reach out anytime.',
   'contact.phoneNote': 'Phone consultation',
   'contact.mailNote': 'Documents & quotes',
+  'contact.kakaoCopy': 'Copy ID',
+  'contact.kakaoNote': 'KakaoTalk › Add friend › Search by ID',
   'contact.online': 'Online, 24/7',
   'contact.onlineNote': 'Leave a request or message anytime',
   'inq.title': 'Quick Inquiry',
@@ -142,7 +144,8 @@ window.I18N_EN = {
   'msg.fail': 'Sending failed. Please try again or contact us by phone/email.',
   'msg.mailto': 'Your email app has opened. Please press "Send" in the email to complete your request.',
   'cat.notice': 'Notice',
-  'cat.news': 'News'
+  'cat.news': 'News',
+  'msg.copied': 'Copied!'
 };
 
 window.I18N_KO_MSG = {
@@ -155,5 +158,6 @@ window.I18N_KO_MSG = {
   'news.empty': '등록된 글이 없습니다.',
   'news.error': '글을 불러오지 못했습니다. 잠시 후 다시 시도해 주세요.',
   'cat.notice': '공지',
-  'cat.news': '소식'
+  'cat.news': '소식',
+  'msg.copied': '복사됨!'
 };
